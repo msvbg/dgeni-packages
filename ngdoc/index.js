@@ -84,7 +84,7 @@ module.exports = new Package('ngdoc', [require('../jsdoc'), require('../nunjucks
   });
 
   computeIdsProcessor.idTemplates.push({
-    docTypes: ['provider', 'service', 'directive', 'input', 'object', 'function', 'filter', 'type' ],
+    docTypes: ['provider', 'service', 'directive', 'input', 'object', 'function', 'filter', 'type', 'controller'],
     idTemplate: 'module:${module}.${docType}:${name}',
     getAliases: getAliases
   });
@@ -94,7 +94,7 @@ module.exports = new Package('ngdoc', [require('../jsdoc'), require('../nunjucks
 
 .config(function(computePathsProcessor, createDocMessage) {
   computePathsProcessor.pathTemplates.push({
-    docTypes: ['provider', 'service', 'directive', 'input', 'object', 'function', 'filter', 'type' ],
+    docTypes: ['provider', 'service', 'directive', 'input', 'object', 'function', 'filter', 'type', 'controller'],
     pathTemplate: '${area}/${module}/${docType}/${name}',
     outputPathTemplate: 'partials/${area}/${module}/${docType}/${name}.html'
   });
