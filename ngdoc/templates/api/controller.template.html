@@ -3,7 +3,7 @@
 {% block related_components %}
   {% if doc.providerDoc -%}
   <li>
-    <a href="{$ doc.providerDoc.path $}">- {$ doc.providerDoc.name $}</a>
+    <a ng-href="/#/{$ doc.providerDoc.path $}">- {$ doc.providerDoc.name $}</a>
   </li>
   {%- endif %}
 {% endblock %}

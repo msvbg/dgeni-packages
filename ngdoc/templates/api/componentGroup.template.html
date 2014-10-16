@@ -12,20 +12,7 @@
 {$ doc.description | marked $}
 
 <div class="component-breakdown">
-  <div>
-    <table class="definition-table">
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-      {% for page in doc.components %}
-      <tr>
-        <td>{$ page.id | link(page.name, page) $}</td>
-        <td>{$ page.description | firstParagraph | marked $}</td>
-      </tr>
-      {% endfor %}
-    </table>
-  </div>
+
 </div>
 
 {% endblock %}
