@@ -2,6 +2,7 @@ module.exports = [
   require('./ngdoc'),
   require('./name'),
   require('./area'),
+  require('./author'),
   require('./module'),
   require('./id'),
   require('./restrict'),

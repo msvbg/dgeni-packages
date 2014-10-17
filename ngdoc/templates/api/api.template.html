@@ -45,6 +45,13 @@
   {%- endfor -%}
   {% endif -%}
   {% endblock %}
+
+  {% block author %}
+  {% if doc.author %}
+  <h2>Author</h2>
+  {$ doc.author $}
+  {% endif %}
+  {% endblock %}
 </div>
 
 {% endblock %}

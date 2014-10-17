@@ -132,6 +132,6 @@
   "homepage": "https://github.com/angular/dgeni-packages",
   "_id": "dgeni-packages@0.10.3",
   "_shasum": "24eddcd2756fbc954db82a6c77ab89041cb39dab",
-  "_resolved": "git+https://github.com/msvbg/dgeni-packages.git#59b12f8afba56a2bf5b3662ae21cfa49de052bea",
+  "_resolved": "git+https://github.com/msvbg/dgeni-packages.git#3a7c4c5777175f3567d5d6a1c5d3d13b5ade8732",
   "_from": "git+https://github.com/msvbg/dgeni-packages.git"
 }

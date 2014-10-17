@@ -6,6 +6,13 @@
     <h3>{$ functionSyntax(method) $}</h3>
     <div>{$ method.description | marked $}</div>
 
+    {% if method.examples %}
+    <h4>Examples</h4>
+    {%- for example in method.examples -%}
+      {$ example | marked $}
+    {%- endfor -%}
+    {% endif %}
+
     {% if method.params %}
     <h4>Parameters</h4>
     {$ paramTable(method.params) $}
@@ -19,6 +26,11 @@
     {% if method.returns %}
     <h4>Returns</h4>
     {$ typeInfo(method.returns) $}
+    {% endif %}
+
+    {% if method.author %}
+    <h4>Author</h4>
+    {$ method.author $}
     {% endif %}
 
   </li>
